@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="storage.js"></script>
+  </head>
+  <body>
+    <h4><h2>OXXO MORELOS</h2></h4>
+
+    <div class="card">
+      <img src="logo.png" alt="logo">
+      <div class="container">
+        <form>
+          <label for="id">ID:</label>
+          <input type="text" id="id">
+          <br>
+          <label for="descripcion">Descripción del Producto:</label>
+          <input type="text" id="descripcion">
+          <br>
+          <label for="precio">Precio:</label>
+          <input type="text" id="precio">
+          <br>
+          <label for="marca">Marca:</label>
+          <input type="text" id="marca">
+          <br>
+          <label for="categoria">Categoría:</label>
+          <select id="categoria">
+            <option value ="Jugos">Jugos</option>
+            <option value="Electrodomesticos">Electrodomesticos</option>
+            <option value="Abarrotes">Abarrotes</option>
+            <option value="Galletas">Galletas</option>
+            <option value="Sabritas">Sabritas</option>
+            <option value="Playa">Playa</option>
+            <option value="Vinos Y licores">Hogar</option>
+            <option value=Encendedores">Encendedores</option>
+            <option value="Revistas">Revistas</option>
+
+          </select>
+          <br>
+          <button id="btnSave" onclick="saveData();">Guardar</button>
+          <button id="btnUpdate" onclick="updateData()">Actualizar</button>
+          <button id="btnDelete" onclick="deleteData();">Borrar todo</button>
+        </form>
+        <br>
+        <button id="btnList" onclick="listData();">Listar productos</button> 
+        <div>
+          <table id="products" border="1"><br>
+          </table>
+        </div>
+        <br>
+        <label for="search">Buscar:</label>
+        <input type="text" id="search">
+        <button id="btnSearch" onclick="searchData();">Buscar</button>
+        <button id="btnClearSearch" onclick="clearSearch();">Borrar</button>
+        <button id="btnEditar" onclick="editData();">Editar</button>
+        <button id="btnGuardar"onclick="saveEditData()">Guardar</button>
+        <table id="product" border="1"><br>
+        </table>
+      </div>
+      <button id="btnDelete" onclick="deleteProduct()">Eliminar Producto</button>
+    </div>
+    <br><br>
+  </body>
+</html>
